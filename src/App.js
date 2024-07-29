@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+// import { Signup } from '.src/components/Signupform';
+// function App() {
+//   return (
+//    <div ClassName="App">
+//     <Signup />
+//     </div>
+
+//   );
+// }
+
+//export default App; 
+
+// App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import  Signupform from './components/Signupform'; // Adjust the import path as needed
+// import LoginForm from './components/LoginForm';
+// import LoginForm from './components/login';
+import { LoginForm } from './components/LoginForm';
+import Dashboard from './components/Dashboard';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+    
+        <Router>
+            <Routes>
+                <Route path="/" element={<Signupform/>} />
+                {/* Define other routes here */}
+                <Route path="/Login" element={<LoginForm/>}/>
+                <Route path="/dashboard" element={<Dashboard/>}/>
+            </Routes>
+        </Router>
+    );
 }
 
 export default App;
+
+
+

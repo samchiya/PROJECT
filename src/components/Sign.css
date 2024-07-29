@@ -1,0 +1,22 @@
+.main{
+   display:flex;
+   flex-direction:column;
+   margin:auto;
+   margin-top: 200px;
+   padding-bottom: 30px;
+   background-color: white;
+   align-items:center;
+   gap:9px;
+   width:100%;
+   margin-top:50 px;
+   font-size: 30px;
+   font-style: inherit;
+
+
+}
+.form-group{
+    gap:20px;
+   background-color: rgba(228, 218, 218, 0.841);
+   border-radius: 2px;
+   height:45px
+}

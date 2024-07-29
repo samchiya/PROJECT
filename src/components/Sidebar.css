@@ -1,0 +1,40 @@
+
+  
+  .sidebar h2 {
+    color: #010609b8; /* Ensure headings are readable */
+    margin-top: 0; /* Remove top margin to align with padding */
+    font-size: 1.5em; /* Increase font size for headings */
+    text-align: center; /* Center align the heading */
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0; /* Margin for spacing */
+    width: 100%; /* Full width for the list */
+  }
+  
+  .sidebar ul li {
+    margin: 10px 0; /* Margin for spacing between items */
+  }
+  
+  .sidebar ul li a {
+    color: #ffffff; /* Ensure text is readable */
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px; /* Increase padding for better touch targets */
+    border-radius: 4px; /* Rounded corners for links */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    width: 100%; /* Full width for links */
+    text-align: center; /* Center align the text in links */
+  }
+  
+  .sidebar ul li a:hover {
+    background-color: #3b4049; /* Slightly lighter background on hover */
+  }
+  
+  /* Optional: Add a class to shift the sidebar back */
+  .sidebar.active {
+    left: 0; /* Move sidebar into view */
+  }
+  
